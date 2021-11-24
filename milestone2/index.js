@@ -19,6 +19,11 @@ app.get("/:id/photos", (req, res) => {
   const id = req.params.id;
 });
 
+// to locate to the createCard.ejs
+app.get("/createCard", (req, res) => {
+  res.render("createCard");
+});
+
 app.listen(PORT, () => {
   console.log(`Server now is running at http://localhost:${PORT} 🚀`);
 });
