@@ -1,10 +1,56 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
+   <!--<h1 class="title">My Picture Gallery URL:</h1> --> 
+ 
+<!--
   </head>
   <body></body>
 </html>
+-->
+
+<!--all comments inside every lines to help me easier understand the relationship of them-->
+
+<div class="container">
+  <form action="/auth/login" method="POST"> 
+    <div class="form-group">
+      <h3 class="text-center">Create your DevCard</h3>
+                                      <!--tem. comment here-->>
+      <label for="exampleInputEmail1"> <!--Email address--> </label>
+      <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Your Full Name">
+      <small id="emailHelp" class="form-text text-muted"><!--We'll never share your email with anyone else.--></small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1"><!--Password--></label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="About Me" placeholder="About Me">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1"><!--Password--></label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="About Me" placeholder="Github URL">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1"><!--Password--></label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="About Me" placeholder="Twitter URL">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1"><!--Password--></label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="About Me" placeholder="Favourite Books (Seperate by comma)">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1"><!--Password--></label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="About Me" placeholder="Favourite Artists (Seperate by comma)">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Site</button>
+    <a class="btn btn-primary" href="auth/github"><!--Login with Github--></a>
+  </form>
+</div>
